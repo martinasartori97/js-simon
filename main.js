@@ -15,7 +15,9 @@ function generaNumeriCasuali() {
     console.log(numeri);
 
 }
-avviaTimer();
+document.getElementById('genera').addEventListener('click', generaNumeriCasuali);
+
+avviaTimer(30);
 
 
 
