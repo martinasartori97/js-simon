@@ -12,7 +12,7 @@ function generaNumeriCasuali() {
     document.getElementById('numeri').innerText = numeri.join(', ');
     console.log(numeri);
 }
-
+avviaTimer();
 
 
 
@@ -32,7 +32,7 @@ function avviaTimer(secondi) {
         }
     }, 1000);
 }
-avviaTimer();
+
 
 //faccio scomparire i numeri dopo 30 secondi e faccio apparire  5 input in cui l'utente deve inserire i numeri che ha visto precedentemente, nell'ordine che preferisce.
 
