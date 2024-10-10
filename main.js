@@ -1,23 +1,12 @@
 console.log("simon Says");
 
-
-//creo in pagina 5 numeri casuali.
-function generaNumeriCasuali() {
-    const numeri = [];
-    for (let i = 0; i < 5; i++) {
-        // Genero un numero casuale tra 0 e 100
-        const numeroCasuale = Math.floor(Math.random() * 101);
-        numeri.push(numeroCasuale);
-    }
-    document.getElementById('numeri').innerText = numeri.join(', ');
-
-    generaNumeriCasuali()
-    console.log(numeri);
-
+const numeri = [];
+for (let i = 0; i < 5; i++) {
+    // Genero un numero casuale tra 0 e 100
+    const numeroCasuale = Math.floor(Math.random() * 101);
+    numeri.push(numeroCasuale);
 }
-document.getElementById('genera').addEventListener('click', generaNumeriCasuali);
-
-avviaTimer(30);
+document.getElementById('numeri').innerText = numeri.join(', ');
 
 
 
@@ -36,9 +25,18 @@ function avviaTimer(secondi) {
             timerElement.innerText = "Tempo scaduto!";
         }
     }, 1000);
+    console.log(tempoRimanente);
+
 }
+avviaTimer(30);
+
 
 
 //faccio scomparire i numeri dopo 30 secondi e faccio apparire  5 input in cui l'utente deve inserire i numeri che ha visto precedentemente, nell'ordine che preferisce.
+function mostraInput() {
+    document.getElementById('inputContainer').classList.remove('hidden');
+}
+
+
 
 //Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
