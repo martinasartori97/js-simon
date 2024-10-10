@@ -37,7 +37,7 @@ avviaTimer(30);
 const input = input
 function mostraInput() {
     document.getElementById('inputContainer').classList.remove('hidden');
-    setTimeout(mostraInput);
+    setTimeout();
     document = getElementById(`inputContainer`).style.display = block;
     console.log(input);
 
