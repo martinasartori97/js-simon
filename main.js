@@ -33,8 +33,14 @@ avviaTimer(30);
 
 
 //faccio scomparire i numeri dopo 30 secondi e faccio apparire  5 input in cui l'utente deve inserire i numeri che ha visto precedentemente, nell'ordine che preferisce.
+
+const input = input
 function mostraInput() {
     document.getElementById('inputContainer').classList.remove('hidden');
+    setTimeout(mostraInput);
+    document = getElementById(`inputContainer`).style.display = block;
+    console.log(input);
+
 }
 
 
