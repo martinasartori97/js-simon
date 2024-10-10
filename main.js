@@ -34,15 +34,12 @@ avviaTimer(30);
 
 //faccio scomparire i numeri dopo 30 secondi e faccio apparire  5 input in cui l'utente deve inserire i numeri che ha visto precedentemente, nell'ordine che preferisce.
 
-const input = input
-function mostraInput() {
-    document.getElementById('inputContainer').classList.remove('hidden');
-    setTimeout();
-    document = getElementById(`inputContainer`).style.display = block;
-    console.log(input);
-
-}
-
+setTimeout(function () {
+    // Codice da eseguire dopo 30 secondi
+    document.getElementById('numeri').style.display = 'none'; // Nascondi i numeri
+    document.getElementById('inputContainer').style.display = 'block'; // Mostra gli input
+    console.log("Sono passati 30 secondi!");
+}, 30000);
 
 
 //Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
