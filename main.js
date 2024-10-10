@@ -10,10 +10,10 @@ function generaNumeriCasuali() {
         numeri.push(numeroCasuale);
     }
     document.getElementById('numeri').innerText = numeri.join(', ');
-    
+
     generaNumeriCasuali()
     console.log(numeri);
-    
+
 }
 avviaTimer();
 
